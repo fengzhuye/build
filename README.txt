@@ -52,10 +52,10 @@ overrides.rb:
 	     executed after autoproj loaded.
 
 
-**编译步骤：**
 
-  - **orocos的编译：**
+编译步骤(Markdown 格式，可能显示有问题)：
 
+  orocos的编译：
 
 在 `~/.bashrc` 文件或者 `~/.profile` 文件中去掉之前orocos的环境变量，下载代码：
 
@@ -115,14 +115,14 @@ export XENOMAI_ROOT_DIR=/usr/xenomai
 autoproj fast-build --parallel=1
 ```
 
-**注意： 可能会出现内存不够编译失败的问题，设置交换分区以避免内存不足:**
+注意： 可能会出现内存不够编译失败的问题，设置交换分区以避免内存不足:
 ```
 sudo fdisk -l 查看
 sudo mount /dev/mmcblk1p1 /mnt
 sudo swapon /mnt/swapfile
 ```
 
-**在编译 orogen 的时候可能失败，查看log文件：**
+在编译 orogen 的时候可能失败，查看log文件：
 
 ```
 可能出现问题如下：
